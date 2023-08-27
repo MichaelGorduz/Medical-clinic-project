@@ -1,0 +1,203 @@
+@import "cards.css";
+@import "modal.css";
+
+/* Michael part  */
+
+.container-main {
+    max-width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: linear-gradient(rgba(33, 30, 30, 0.53), rgba(82, 86, 86, 0.89)), url("../images/flowers.jpg") no-repeat;
+    background-size: cover;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~` */
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+    /* background: linear-gradient(rgb(129, 191, 107), rgba(71, 255, 221, 0.93)); */
+    background: linear-gradient(rgb(210, 76, 151), rgba(71, 255, 221, 0));
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 5s ease, transform 1s ease;
+    border-bottom: 2px solid #1876c8;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 0px 5px 7px #000;
+    font-style: italic;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 2s ease, transform 3s ease;
+}
+
+.logo p {
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+.logo span {
+    color: #ff63ac;
+    font-style: normal;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ~~~~~~~~~~~~~~~~~ BUTTONS ~~~~~~~~~~~~~~~~~~~ */
+
+#loginBtn {
+    padding: 4px 20px;
+    background-color: #c4d3ff17;
+    border-radius: 5px;
+    margin-right: 5%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+}
+
+#loginBtn:hover {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0);
+    color: #000;
+}
+
+#createVisitBtn {
+    display: none;
+    background-color: inherit;
+    color: white;
+    margin-right: 2%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#createVisitBtn:hover {
+    border-color: inherit;
+    color: inherit;
+}
+
+#logout {
+    display: none;
+    padding: 4px 12px;
+    background-color: #c4d3ff00;
+    border: 2px solid orange;
+    border-radius: 5px;
+    margin-right: 2%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    color: darkorange;
+}
+
+#logout:hover {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0);
+    color: darkred;
+    border: 2px solid darkred;
+    background-color: #c4d3ff;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ MODAL WINDOW ~~~~~~~~~~~~~~ */
+.modal-enter {
+    display: none;
+    min-height: 350px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    background: linear-gradient(rgb(162, 176, 178), rgba(25, 119, 132, 0.71)) no-repeat;
+    background-size: cover;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-enter input {
+    display: block;
+    margin: 30px;
+    padding: 10px;
+    width: 250px;
+}
+
+.modal-enter input:active {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.modal-enter h2 {
+    margin: 30px;
+    text-align: center;
+    font-size: 22px;
+}
+
+#send {
+    display: block;
+    margin: 50px auto;
+    padding: 4px 16px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    background-color: #949db68f;
+    color: #000;
+    border-radius: 5px;
+}
+
+#send:hover {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0);
+    background-color: #c4d3ff;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.main-window {
+    min-height: 100vh;
+    border-radius: 0 0 15px 15px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~ MUST BE AT THE END ~~~~~~~~~~~~~~~~~~~ */
+.none {
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
+.changeTheme {
+    background: #2e2e2e;
+}
+
+.editForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    bottom: 0;
+}
+.editForm form {
+    width: 400px;
+    min-height: 500px;
+    background: #c4d3ff;
+    border-radius: 10px;
+    padding: 10px;
+}
+.edit-actions {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

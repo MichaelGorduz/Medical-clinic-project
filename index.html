@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step Project "Cards"</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-main">
+
+        <header class="header">
+            <div class="logo"><img src="./images/heart.png" alt="Logo"><p> " DR HOUSE "</p><span>MEDICAL CLINIC</span> </div>
+            <div class="input-group mb-3 find"></div>
+            <button type="button" class="btn btn-outline-light openModalBtn default-active" data-bs-toggle="modal" data-bs-target="#createCardModal" id="createVisitBtn">New Visit</button>
+            <button id="loginBtn">Sign in</button>
+            <button id="logout">Sign out</button>
+        </header>
+
+        <main class="main">
+
+              <div class="row row-cols-auto  cards"></div>
+
+           <div class="main-window">
+              <div class="modal-enter">
+                  <h2 id="letMeIn">Sign In</h2>
+                  <input type="email" id="emailField" placeholder="Email" autocomplete="off">
+                  <input type="password" id="passwordField" placeholder="Password" autocomplete="off">
+                  <button id="send">Submit</button>
+             </div>
+          </div>
+       </main>
+
+    </div>
+    <script src="./js/main.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

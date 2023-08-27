@@ -1,0 +1,45 @@
+.new-visit-title {
+    font-family: 'Pacifico', cursive;
+    color: rgba(10, 63, 178, 0.76);
+    font-weight: 400;
+    margin-left: 29%;
+}
+
+.fw-medium {
+    color: #031a2ec2;
+}
+
+.additional-fields {
+    display: none;
+}
+
+.specialist,
+.doc,
+.urg,
+.urgency-btn {
+    text-transform: capitalize;
+}
+
+.name-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-control {
+    margin-right: 5px;
+}
+
+.active {
+    display: block;
+}
+
+.input-group.find {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 2% !important;
+    z-index: 3;
+}
+
+.dropdown-menu.show {
+    z-index: 100;       // Dont work
+}
